@@ -1,7 +1,7 @@
-package ink.cwblog.strategy_demo.strategy.strategy.impl;
+package ink.cwblog.strategy_demo.demo1.strategy.strategy.impl;
 
 import ink.cwblog.strategy_demo.model.Order;
-import ink.cwblog.strategy_demo.strategy.strategy.OrderStrategy;
+import ink.cwblog.strategy_demo.demo1.strategy.strategy.OrderStrategy;
 import org.springframework.stereotype.Component;
 
 /**

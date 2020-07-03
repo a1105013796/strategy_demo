@@ -1,16 +1,12 @@
-package ink.cwblog.strategy_demo.strategy.context;
+package ink.cwblog.strategy_demo.demo1.strategy.context;
 
 
 import ink.cwblog.strategy_demo.model.Order;
-import ink.cwblog.strategy_demo.strategy.strategy.OrderStrategy;
-import ink.cwblog.strategy_demo.strategy.strategy.impl.OrderStrategyA;
-import ink.cwblog.strategy_demo.strategy.strategy.impl.OrderStrategyB;
-import org.springframework.beans.factory.annotation.Autowired;
+import ink.cwblog.strategy_demo.demo1.strategy.strategy.OrderStrategy;
 import org.springframework.stereotype.Component;
 import org.springframework.util.ObjectUtils;
 
 import javax.annotation.Resource;
-import java.util.Map;
 
 /**
  * @author chenw
@@ -24,9 +20,9 @@ public class OrderContext {
     private Order order;
 
     @Resource(name = "OrderStrategyA")
-    private OrderStrategyA orderStrategyA;
+    private OrderStrategy orderStrategyA;
     @Resource(name = "OrderStrategyB")
-    private OrderStrategyB orderStrategyB;
+    private OrderStrategy orderStrategyB;
 
     private OrderContext() {
     }
@@ -44,5 +40,4 @@ public class OrderContext {
         }
         return result;
     }
-
 }

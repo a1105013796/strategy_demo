@@ -1,4 +1,4 @@
-package ink.cwblog.strategy_demo.strategy.strategy;
+package ink.cwblog.strategy_demo.demo1.strategy.strategy;
 
 
 import ink.cwblog.strategy_demo.model.Order;
