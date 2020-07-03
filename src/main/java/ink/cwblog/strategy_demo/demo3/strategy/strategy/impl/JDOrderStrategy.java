@@ -11,7 +11,8 @@ import org.springframework.stereotype.Component;
 @Component("JDOrder2")
 public class JDOrderStrategy implements OrderStrategy {
     @Override
-    public String createOrder(Order order) {
+    public String createOrder(Order order){
+
         return "执行JD订单创建策略";
     }
 }
